@@ -1,0 +1,80 @@
+{
+    "name": "evilmood-snippet",
+    "displayName": "EvilMoOd Snippet",
+    "description": "木的前端代码片段,根据多个snippet提炼出适合本人自用的代码片段,提高生产力,后续会不断更新",
+    "version": "0.0.1",
+    "publisher": "EvilMoOd",
+    "icon": "./images/EvilMoOd.png",
+    "engines": {
+        "vscode": "^1.69.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/EvilMoOd/EvilMoOd-Snippet.git"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "scripts": {
+        "build": "vsce package -o evilmood-snippets-$npm_package_version.vsix",
+        "install": "yarn build && code --install-extension evilmood-snippets-$npm_package_version.vsix"
+    },
+    "keywords": [
+        "Vue Snippets",
+        "React Snippets",
+        "Composition API",
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/common.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/common.code-snippets"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/common.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/common.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/typescript.code-snippets"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/react.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/react.code-snippets"
+            },
+            {
+                "language": "vue",
+                "path": "./snippets/vueinit.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/vue.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/vue.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/vuetemplate.code-snippets"
+            },
+            {
+                "language": "markdown",
+                "path": "./snippets/markdown.code-snippets"
+            }
+        ]
+    }
+}

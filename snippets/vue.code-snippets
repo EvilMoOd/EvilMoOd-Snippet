@@ -1,0 +1,210 @@
+{
+  //Composition API
+  "Vue Composition API - Reactive": {
+    "prefix": "reactive",
+    "body": ["const ${1:name} = reactive({", "\t${2:count}: ${3:0}", "})"],
+    "description": "Vue Composition api - reactive"
+  },
+  "Vue Composition API - Computed": {
+    "prefix": "computed",
+    "body": ["const ${1:name} = computed(() => {", "\treturn ${2}", "})"],
+    "description": "Vue Composition api - computed"
+  },
+  "Vue Composition API - watch - single source": {
+    "prefix": "watch",
+    "body": ["watch(() => ${1:foo}, (newValue, oldValue) => {", "\t${2}", "})"],
+    "description": "Vue Composition api - watcher single source"
+  },
+  "Vue Composition API - watch - array": {
+    "prefix": "watch-array",
+    "body": [
+      "watch([${1:foo}, ${2:bar}], ([new${1}, new${2}], [prev${1}, prev${2}]) => {",
+      "\t${3}",
+      "})"
+    ],
+    "description": "Vue Composition api - watch as array"
+  },
+  "Vue Composition API - watchEffect": {
+    "prefix": "watcheffect",
+    "body": ["watchEffect(() => {", "\t${1}", "})"],
+    "description": "Vue Composition api - watchEffect"
+  },
+  "Vue Composition API - Vue ref": {
+    "prefix": "ref",
+    "body": ["const ${1:name} = ref(${2:initialValue})"],
+    "description": "Vue Ref"
+  },
+  "Vue Lifecycle Hooks - onMounted": {
+    "prefix": "onmounted",
+    "body": ["onMounted(() => {${1}})"],
+    "description": "Vue Mounted Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onBeforeMount": {
+    "prefix": "onbeforemount",
+    "body": ["onBeforeMount(() => {${1}})"],
+    "description": "Vue onBeforeMount Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onBeforeUpdate": {
+    "prefix": "onbeforeupdate",
+    "body": ["onBeforeUpdate(() => {${1}})"],
+    "description": "Vue onBeforeUpdate Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onUpdated": {
+    "prefix": "onupdated",
+    "body": ["onUpdated(() => {${1}})"],
+    "description": "Vue onUpdated Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onErrorCaptured": {
+    "prefix": "onerrorcaptured",
+    "body": ["onErrorCaptured(() => {${1}})"],
+    "description": "Vue onErrorCaptured Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onUnmounted": {
+    "prefix": "onunmounted",
+    "body": ["onUnmounted(() => {${1}})"],
+    "description": "(destroyed) Vue onUnmounted Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onBeforeUnmount": {
+    "prefix": "onbeforeunmount",
+    "body": ["onBeforeUnmount(() => {${1}})"],
+    "description": "(beforeDestroy) Vue onBeforeUnmount Lifecycle hook"
+  },
+  "Plugin import": {
+    "prefix": "vplugin",
+    "body": [
+      "import Vue from 'vue'",
+      "import ${1:VueCompositionApi} from '${2:@vue/composition-api}'",
+      "",
+      "Vue.use(${1:VueCompositionApi})"
+    ],
+    "description": "Import a plugin to main.js or plugins file"
+  },
+  "Vue Composition API Reactive Script": {
+    "prefix": "reactive-setup",
+    "body": [
+      "import { reactive, toRefs } from 'vue'",
+      "",
+      "export default {",
+      "\tsetup () {",
+      "\t\tconst state = reactive({",
+      "\t\t\t${0:count}: ${1:0},",
+      "\t\t})",
+      "\t",
+      "\t\treturn {",
+      "\t\t\t...toRefs(state),",
+      "\t\t}",
+      "\t}",
+      "}"
+    ],
+    "description": "Vue Composition API Script with Reactive"
+  },
+  "Use Composition API within Options API": {
+    "prefix": "useinoptions",
+    "body": [
+      "import { ${0:component} } from '@/composables/${0:component}.js'",
+      "",
+      "export default {",
+      "\tsetup () {",
+      "\t\tconst { ${1:name} } = ${0:component}()",
+      "\t",
+      "\t\treturn {",
+      "\t\t\t${1:name}",
+      "\t\t}",
+      "\t}",
+      "}"
+    ],
+    "description": "Use Composition API within Options API"
+  },
+  // vue-router
+  "Vue Router": {
+    "prefix": "vrouter",
+    "body": [
+      "import Vue from 'vue';",
+      "import VueRouter from 'vue-router';",
+      "",
+      "Vue.use(VueRouter);",
+      "",
+      "export const router = new VueRouter({",
+      "\tbase: '/',",
+      "\tmode: 'history',",
+      "\troutes: [",
+      "\t\t{ path: '/path', component: component }",
+      "\t]",
+      "});"
+    ],
+    "description": "Base for Vue Router"
+  },
+  "Vue Router Route": {
+    "prefix": "vroute",
+    "body": [
+      "{",
+      "\tpath: '${1:pathName}',",
+      "\tname: '${2:routeName}',",
+      "\tcomponent: () => import('./${3:pathToComponent}'),",
+      "},"
+    ],
+    "description": "Vue Router route with per route code-splitting"
+  },
+  "Vue Router scrollBehavior": {
+    "prefix": "vscrollbehavior",
+    "body": [
+      "scrollBehavior(to, from, savedPosition) {",
+      "\tif(savedPosition) {",
+      "\t\treturn savedPosition;",
+      "\t} else {",
+      "\t\treturn { x: 0, y: 0 };",
+      "\t}",
+      "},"
+    ],
+    "description": "Vue Router scrollBehavior"
+  },
+  "Vue Router beforeEach": {
+    "prefix": "vbeforeeach",
+    "body": ["router.beforeEach((to, from, next) => {", "\t${1:next();}", "});"],
+    "description": "Vue Router global guards beforeEach"
+  },
+  "Vue Router beforeResolve": {
+    "prefix": "vbeforeresolve",
+    "body": ["router.beforeResolve((to, from, next) => {", "\t${1:next();}", "});"],
+    "description": "Vue Router global guards beforeResolve"
+  },
+  "Vue Router afterEach": {
+    "prefix": "vaftereach",
+    "body": ["router.afterEach((to, from) => {", "\t", "});"],
+    "description": "Vue Router global guards afterEach"
+  },
+  "Vue Router beforeEnter": {
+    "prefix": "vbeforeenter",
+    "body": ["beforeEnter(to, from, next) {", "\t${1:next();}", "},"],
+    "description": "Vue Router per-route guard beforeEnter"
+  },
+  "Vue Router beforeRouteEnter": {
+    "prefix": "vbeforerouteenter",
+    "body": ["beforeRouteEnter(to, from, next) {", "\tnext(vm => {${1:}});", "},"],
+    "description": "Vue Router component guards beforeRouteEnter"
+  },
+  "Vue Router beforeRouteUpdate": {
+    "prefix": "vbeforerouteupdate",
+    "body": ["beforeRouteUpdate(to, from, next) {", "\t${1:next();}", "},"],
+    "description": "Vue Router component guards beforeRouteUpdate"
+  },
+  "Vue Router beforeRouteLeave": {
+    "prefix": "vbeforerouteleave",
+    "body": ["beforeRouteLeave(to, from, next) {", "\t${1:next();}", "},"],
+    "description": "Vue Router component guards beforeRouteLeave"
+  },
+  //pinia
+  "Pinia": {
+    "prefix": "pinia",
+    "body": [
+      "import { defineStore } from 'pinia';",
+      "export const use${1/(.*)/${1:/capitalize}/}Store = defineStore('${1:main}', {",
+      "state: () => ({",
+      "${2}",
+      "}),",
+      "actions: {${3}},",
+      "getters: {${4}},",
+      "})"
+    ]
+  }
+}

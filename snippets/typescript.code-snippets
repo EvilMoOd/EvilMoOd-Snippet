@@ -1,0 +1,17 @@
+{
+  "type": {
+    "prefix": "type",
+    "description": "type",
+    "body": ["type ${1:name} = ${2:string}"]
+  },
+  "interface": {
+    "prefix": "interface",
+    "description": "interface",
+    "body": ["interface ${1:name} {", "${2} ", "}"]npm
+  },
+  // other
+  "setinterval": {
+    "prefix": "setinterval",
+    "body": ["setInterval(() => {", "${0}", "}, ${1:interval});"]
+  },
+}

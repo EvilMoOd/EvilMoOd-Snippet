@@ -1,0 +1,122 @@
+{
+  //基本
+  "console log": {
+    "prefix": "cl",
+    "body": [
+      " console.log('🚀这段DEBUG在$TM_FILENAME_BASE的第$TM_LINE_NUMBER行🚀 🦴变量是${1}🦴',${1})"
+    ],
+    "description": "DEBUG"
+  },
+  "const": {
+    "prefix": "c",
+    "description": "const",
+    "body": ["const ${1} = ${2}"]
+  },
+  "const arrow function": {
+    "prefix": "cf",
+    "description": "箭头函数表达式",
+    "body": ["const ${1} = (${2})=> {${3}}"]
+  },
+  "let": {
+    "prefix": "l",
+    "description": "let",
+    "body": ["let ${1} = ${2}"]
+  },
+  //判断
+  "else if": {
+    "prefix": "ei",
+    "body": ["else if{", "${0}", "}"],
+    "description": "else if"
+  },
+  "else": {
+    "prefix": "el",
+    "body": ["else {", "${0}", "}"],
+    "description": "else"
+  },
+  //函数
+  "arrow": {
+    "prefix": "a",
+    "body": ["(${1}) => ${2}"],
+    "description": "arrow"
+  },
+  "arrow return": {
+    "prefix": "ar",
+    "body": ["(${1})=>{", "${2}", "}"],
+    "description": "arrow return"
+  },
+  //数组方法
+  "map": {
+    "prefix": "map",
+    "body": ["${1}.map((${2:item}) => ${0})"],
+    "description": "map"
+  },
+  "reduce": {
+    "prefix": "reduce",
+    "body": ["${1}.reduce((${2:previous}, ${3:current}) => {", "${0}", "}, ${4:initial});"],
+    "description": "reduce"
+  },
+  "filter": {
+    "prefix": "filter",
+    "body": ["${1}.filter((${2:item)} => ${0});"],
+    "description": "filter"
+  },
+  "find": {
+    "prefix": "find",
+    "body": ["${1}.find($({2:item}) => ${0});"],
+    "description": "find"
+  },
+  "findIndex": {
+    "prefix": "findIndex",
+    "body": ["${1}.findIndex((${2:item}) => ${0});"],
+    "description": "findIndex"
+  },
+  //Promise
+  "then": {
+    "prefix": "then",
+    "body": ["${1:promise}.then((${2:value}) => {${0}})"],
+    "description": "then"
+  },
+  "catch": {
+    "prefix": "catch",
+    "body": ["${1:promise}.catch((${2:err}) => {${0}})"],
+    "description": "catch"
+  },
+  //node
+  "require": {
+    "prefix": "req",
+    "body": ["require(${1:path})$0"],
+    "description": "require"
+  },
+  "exports": {
+    "prefix": "exs",
+    "body": ["exports.$1 = $2;$0"],
+    "description": "exports"
+  },
+  "module exports": {
+    "prefix": "me",
+    "body": ["module.exports = $1$0"],
+    "description": "module exports"
+  },
+  // module
+  "imf": {
+    "prefix": "imf",
+    "description": "导入模块",
+    "body": ["import ${1:moduleName} from '${2:module}';"]
+  },
+  "im": {
+    "prefix": "im",
+    "description": "导入模块",
+    "body": ["import '${1:moduleName}' "]
+  },
+  "ex": {
+    "prefix": "ex",
+    "description": "",
+    "body": ["export"]
+  },
+  "exd": {
+    "prefix": "exd",
+    "description": "",
+    "body": ["export default"]
+  },
+  // other
+}
