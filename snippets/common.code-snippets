@@ -3,24 +3,24 @@
   "console log": {
     "prefix": "cl",
     "body": [
-      " console.log('🚀这段DEBUG在$TM_FILENAME_BASE的第$TM_LINE_NUMBER行🚀 🦴变量是${1}🦴',${1})"
+      "console.log(${1},'🚀DEBUG变量>>>${1}<<<在$TM_FILENAME_BASE的第$TM_LINE_NUMBER行🚀')"
     ],
     "description": "DEBUG"
   },
   "const": {
     "prefix": "c",
     "description": "const",
-    "body": ["const ${1} = ${2}"]
+    "body": ["const ${1} = ${0}"]
   },
   "const arrow function": {
     "prefix": "cf",
     "description": "箭头函数表达式",
-    "body": ["const ${1} = (${2})=> {${3}}"]
+    "body": ["const ${1} = (${2})=> {${0}}"]
   },
   "let": {
     "prefix": "l",
     "description": "let",
-    "body": ["let ${1} = ${2}"]
+    "body": ["let ${1} = ${0}"]
   },
   //判断
   "else if": {
@@ -36,12 +36,12 @@
   //函数
   "arrow": {
     "prefix": "a",
-    "body": ["(${1}) => ${2}"],
+    "body": ["(${1}) => ${0}"],
     "description": "arrow"
   },
   "arrow return": {
     "prefix": "ar",
-    "body": ["(${1})=>{", "${2}", "}"],
+    "body": ["(${1})=>{", "${0}", "}"],
     "description": "arrow return"
   },
   //数组方法
@@ -52,12 +52,16 @@
   },
   "reduce": {
     "prefix": "reduce",
-    "body": ["${1}.reduce((${2:previous}, ${3:current}) => {", "${0}", "}, ${4:initial});"],
+    "body": [
+      "${1}.reduce((${2:previous}, ${3:current}) => {",
+      "${0}",
+      "}, ${4:initial});"
+    ],
     "description": "reduce"
   },
   "filter": {
     "prefix": "filter",
-    "body": ["${1}.filter((${2:item)} => ${0});"],
+    "body": ["${1}.filter((${2:item}) => ${0});"],
     "description": "filter"
   },
   "find": {
@@ -84,29 +88,29 @@
   //node
   "require": {
     "prefix": "req",
-    "body": ["require(${1:path})$0"],
+    "body": ["require(${1:path})${0}"],
     "description": "require"
   },
   "exports": {
     "prefix": "exs",
-    "body": ["exports.$1 = $2;$0"],
+    "body": ["exports.${1} = ${2};$0"],
     "description": "exports"
   },
   "module exports": {
     "prefix": "me",
-    "body": ["module.exports = $1$0"],
+    "body": ["module.exports = ${1}${0}"],
     "description": "module exports"
   },
   // module
   "imf": {
     "prefix": "imf",
     "description": "导入模块",
-    "body": ["import ${1:moduleName} from '${2:module}';"]
+    "body": ["import ${1:moduleName} from '${0:module}';"]
   },
   "im": {
     "prefix": "im",
     "description": "导入模块",
-    "body": ["import '${1:moduleName}' "]
+    "body": ["import '${0:moduleName}' "]
   },
   "ex": {
     "prefix": "ex",
@@ -117,6 +121,6 @@
     "prefix": "exd",
     "description": "",
     "body": ["export default"]
-  },
+  }
   // other
 }

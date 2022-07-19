@@ -7,7 +7,7 @@
   "interface": {
     "prefix": "interface",
     "description": "interface",
-    "body": ["interface ${1:name} {", "${2} ", "}"]npm
+    "body": ["interface ${1:name} {", "${2} ", "}"]
   },
   // other
   "setinterval": {
