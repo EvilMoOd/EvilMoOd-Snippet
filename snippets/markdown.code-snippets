@@ -1,0 +1,19 @@
+{
+  "blog": {
+    "prefix": "blog",
+    "description": "博客开头",
+    "body": [
+      "---",
+      "title: ${1}",
+      "date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE",
+      "categories:",
+      " - [${2}]",
+      "tags:",
+      " - ${3}",
+      "sticky: ${4|是否置顶,true,false|}",
+      "description: \"${5:概述}\"",
+      "---",
+      ""
+    ]
+  }
+}

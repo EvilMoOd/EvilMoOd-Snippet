@@ -121,6 +121,11 @@
     "prefix": "exd",
     "description": "",
     "body": ["export default"]
-  }
+  },
   // other
+  "block": {
+    "prefix": "block",
+    "description": "可折叠的代码块",
+    "body": ["// #region ${1}", "${0}", "// #endregion"]
+  }
 }
