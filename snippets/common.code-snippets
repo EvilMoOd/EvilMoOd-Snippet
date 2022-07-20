@@ -50,6 +50,11 @@
     "body": ["${1}.map((${2:item}) => ${0})"],
     "description": "map"
   },
+  "forEach": {
+    "prefix": "forEach",
+    "body": ["${1}.forEach((${2:item},${3:index}) => ${0})"],
+    "description": "forEach"
+  },
   "reduce": {
     "prefix": "reduce",
     "body": [

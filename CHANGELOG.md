@@ -1,9 +1,3 @@
-# Change Log
+# 更新日志
 
-All notable changes to the "evilmood-snippet" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+## 0.0.2 修复一些片段问题，增加片段

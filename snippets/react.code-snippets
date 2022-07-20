@@ -86,8 +86,10 @@
   },
   "className": {
     "prefix": "className",
-    "body": [
-      "className={styles}"
-    ]
+    "body": ["className={styles}"]
   },
+  "Click": {
+    "prefix": "onClick",
+    "body": ["onClick={() => {${1}}}"]
+  }
 }

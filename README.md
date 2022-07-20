@@ -1,65 +1,166 @@
-# evilmood-snippet README
+# EvilMoOd Snippet
 
-This is the README for your extension "evilmood-snippet". After writing up a brief description, we recommend including the following sections.
+一个包搞定各种snippet，补充vscode内置没有的代码片段，做到刚刚好够用！！！😁
+vue借鉴Vue Vscode Snippet，react借鉴react Snippet。
+全面拥抱Vue3和react函数组件，不适用vue2和react类组件
 
-## Features
+## Common for JavaScript and TypeScript
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+### Base
 
-For example if there is an image subfolder under your extension project workspace:
+| Snippet      | Purpose            |
+| -----------  | -------------------|
+|`cl`          | console.log        |
+|`c`           | const              |
+|`cf`          | const name = ()=>{}|
+|`l`           | let                |
+|`ei`          | else if            |
+|`el`          | else               |
+|`a`           | ()=>               |
+|`ar`          | ()=>{}             |
 
-\!\[feature X\]\(images/feature-x.png\)
+### Array
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+| Snippet      | Purpose                     |
+| -----------  | ----------------------------|
+|`map`         | map function                |
+|`forEach`     | forEach function            |
+|`reduce`      | reduce function             |
+|`filter`      | filter function             |
+|`find`        | find function               |
+|`findIndex`   | findIndex function          |
 
-## Requirements
+### Promise
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+| Snippet      | Purpose                     |
+| -----------  | ----------------------------|
+|`then`        | then function               |
+|`catch`       | catch function              |
 
-## Extension Settings
+### node
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+| Snippet            | Purpose                     |
+| -----------------  | ----------------------------|
+|`require`           | require a package           |
+|`exports`           | exports a package           |
+|`module exports`    | exports default a package   |
 
-For example:
+### module
 
-This extension contributes the following settings:
+| Snippet            | Purpose                     |
+| -------------------| ----------------------------|
+|`imf`               | import a package            |
+|`im`                | import a file url           |
+|`ex`                | export  a package           |
+|`exd`               | export default a package    |
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+### code block
 
-## Known Issues
+| Snippet            | Purpose                     |
+| -------------------| ----------------------------|
+|`block`             | a code block 可折叠代码块     |
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+### TS （大部分代码片段都内置在vscode中，所以只补充没有的）
 
-## Release Notes
+| Snippet          | Purpose                     |
+| -----------------| ----------------------------|
+|`type`              | type =                      |
+|`interface`         | interface name {}           |
+|`setinterval`       | 定时器                       |
 
-Users appreciate release notes as you update your extension.
+## Vue
 
-### 1.0.0
+### base
 
-Initial release of ...
+| Snippet          | Purpose                     |
+| -----------------| ----------------------------|
+|`vue`               | Vue Base Template TS SCSS   |
 
-### 1.0.1
+### Vue Composition API
 
-Fixed issue #.
+| Snippet           | Purpose                                               |
+| ------------------| ----------------------------------------------------- |
+| `ref`             | Vue Ref                                               |
+| `reactive`        | Vue Composition API - reactive                        |
+| `computed`        | Vue Composition API - computed                        |
+| `watch`           | Vue Composition API - watcher single source           |
+| `watch-array`     | Vue Composition API - watch as array                  |
+| `watcheffect`     | Vue Composition API - watchEffect                     |
+| `onmounted`       | Lifecycle hook - onMounted                            |
+| `onbeforemount`   | Lifecycle hook - onBeforeMount                        |
+| `onbeforeupdate`  | Lifecycle hook - onBeforeUpdate                       |
+| `onupdated`       | Lifecycle hook - onUpdated                            |
+| `onerrorcaptured` | Lifecycle hook - onErrorCaptured                      |
+| `onunmounted`     | Lifecycle hook - (destroyed) onUnmounted              |
+| `onbeforeunmount` | Lifecycle hook - (beforeDestroy) onBeforeUnmount      |
 
-### 1.1.0
+### Vue Router
 
-Added features X, Y, and Z.
+| Snippet              | Purpose                                       |
+| -------------------- | --------------------------------------------- |
+| `vroute`             | Vue Route base                               |
+| `vrouter`            | Vue Router base                               |
+| `vscrollbehavior`    | Vue Router scrollBehavior                     |
+| `vbeforeeach`        | Vue Router global guards beforeEach           |
+| `vbeforeresolve`     | Vue Router global guards beforeResolve        |
+| `vaftereach`         | Vue Router global guards afterEach            |
+| `vbeforeenter`       | Vue Router per-route guard beforeEnter        |
+| `vbeforerouteenter`  | Vue Router component guards beforeRouteEnter  |
+| `vbeforerouteupdate` | Vue Router component guards beforeRouteUpdate |
+| `vbeforerouteleave`  | Vue Router component guards beforeRouteLeave  |
 
------------------------------------------------------------------------------------------------------------
+### Pinia
 
-## Working with Markdown
+| Snippet  | Purpose   |
+| ---------| ----------|
+| `pinia`  | PiniaBase |
 
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+### Template
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
+| Snippet           | Purpose                             |
+| ----------------- | ----------------------------------- |
+| `vfor`            | v-for directive                     |
+| `vmodel`          | Semantic v-model directive          |
+| `vmodel-num`      | Semantic v-model number directive   |
+| `von`             | v-on click handler with arguments   |
+| `vslot-named`     | Named slot                          |
+| `vel-props`       | Component element with props        |
+| `vsrc`            | Image src binding                   |
+| `vstyle`          | Inline style binding                |
+| `vstyle-obj`      | Inline style binding with objects   |
+| `vclass`          | Class binding                       |
+| `vclass-obj`      | Class binding with objects          |
+| `vclass-obj-mult` | Multiple conditional class bindings |
+| `vanim`           | Transition component with JS hooks  |
+| `vnuxtl`          | Nuxt Routing Link                   |
+| `vroutename`      | router-link Named Routing           |
+| `vroutenameparam` | router-link Named with Parameters   |
+| `vroutepath`      | router-link Path Routing Link       |
 
-### For more information
+## React
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+### base
 
-**Enjoy!**
+| Snippet               | Purpose                             |
+| --------------------- | ----------------------------------- |
+| `rfc`                 | React Function Template             |
+| `memo`                | React memo Function Template        |
+
+### Hook
+
+| Snippet               | Purpose                             |
+| --------------------- | ----------------------------------- |
+| `useState`            | useState Hook                       |
+| `useContext`          | useContext Hook                     |
+| `useEffect`           | useEffect Hook                      |
+| `useLayoutEffect`     | useLayoutEffect Hook                |
+| `useMemo`             | useMemo Hook                        |
+| `useCallback`         | useCallback Hook                    |
+| `useRef`              | useRef Hook                         |
+
+### Template
+
+| Snippet               | Purpose                             |
+| --------------------- | ----------------------------------- |
+| `className`           | scss module classname               |
+| `onClick`             | onClick and arrow function          |

@@ -2,9 +2,13 @@
     "name": "evilmood-snippet",
     "displayName": "EvilMoOd Snippet",
     "description": "木的前端代码片段,根据多个snippet提炼出适合本人自用的代码片段,提高生产力,后续会不断更新",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "EvilMoOd",
     "icon": "./images/EvilMoOd.png",
+    "galleryBanner": {
+        "color": "#100f11",
+        "theme": "dark"
+    },
     "engines": {
         "vscode": "^1.69.0"
     },
