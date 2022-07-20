@@ -11,6 +11,58 @@
       ""
     ]
   },
+  "reactMemoFunctionalComponent": {
+    "prefix": "memo",
+    "description": "Creates a React Functional Component with ES7 module system",
+    "body": [
+      "import { memo } from 'react';",
+      "",
+      "export default memo(function ${TM_FILENAME_BASE}() {",
+      "  return (",
+      "    <>${1:first}</>",
+      "  )",
+      "})",
+      ""
+    ]
+  },
+  "useState": {
+    "prefix": "useState",
+    "body": [
+      "const [${1:first}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:second})"
+    ]
+  },
+  "useTransition": {
+    "prefix": "useTransition",
+    "description": "isPending 为处理状态标识，若处理中则为 true，处理完毕则为 false. startTransition 接受一个回调函数，该回调函数中所有工作 (同步或异步) 处理完毕之后才会将 isPending 置 false",
+    "body": ["const [isPending, startTransition] = useTransition();", ""]
+  },
+  "useDeferredValue": {
+    "prefix": "useDeferredValue",
+    "description": "将状态缓存执行",
+    "body": ["const ${1:deferredValue} = useDeferredValue(${2:value});"]
+  },
+  "useContext": {
+    "prefix": "useContext",
+    "body": ["const ${1:first} = useContext(${2:second})"]
+  },
+  "useReducer": {
+    "prefix": "useReducer",
+    "body": [
+      "const [state, dispatch] = useReducer(${1:first}, ${2:second}, ${3:third})"
+    ]
+  },
+  "useSyncExternalStore": {
+    "prefix": "useSyncExternalStore",
+    "description": "绑定外部store，第二个参数是对数据缓存，变化时更新页面",
+    "body": [
+      "useSyncExternalStore(${1:subscribe}, getSnapshot, getServerSnapshot);",
+      ""
+    ]
+  },
+  "useMemo": {
+    "prefix": "useMemo",
+    "body": ["useMemo(() => ${1:first}, [${2:second}])"]
+  },
   "useCallback": {
     "prefix": "useCallback",
     "body": [
@@ -22,10 +74,6 @@
       ")",
       ""
     ]
-  },
-  "useContext": {
-    "prefix": "useContext",
-    "body": ["const ${1:first} = useContext(${2:second})"]
   },
   "useEffect": {
     "prefix": "useEffect",
@@ -40,18 +88,6 @@
       ""
     ]
   },
-  "useImperativeHandle": {
-    "prefix": "useImperativeHandle",
-    "body": [
-      "useImperativeHandle(",
-      "  ${1:first},",
-      "  () => {",
-      "    ${2:second}",
-      "  },",
-      "  [${3:third}],",
-      ")"
-    ]
-  },
   "useLayoutEffect": {
     "prefix": "useLayoutEffect",
     "body": [
@@ -64,25 +100,27 @@
       "}, [${3:third}])"
     ]
   },
-  "useMemo": {
-    "prefix": "useMemo",
-    "body": ["useMemo(() => ${1:first}, [${2:second}])"]
-  },
-  "useReducer": {
-    "prefix": "useReducer",
+  "useInsertionEffect": {
+    "prefix": "useInsertionEffect",
     "body": [
-      "const [state, dispatch] = useReducer(${1:first}, ${2:second}, ${3:third})"
+      "useInsertionEffect(() => {",
+      "  ${1:first}",
+      "",
+      " ${2:return () => {",
+      "    ${3:second}",
+      "  \\}}",
+      "}, [${4:third}])",
+      ""
     ]
   },
   "useRef": {
     "prefix": "useRef",
     "body": ["const ${1:first} = useRef(${2:second})"]
   },
-  "useState": {
-    "prefix": "useState",
-    "body": [
-      "const [${1:first}, set${1/(.*)/${1:/capitalize}/}] = useState(${2:second})"
-    ]
+  "useImperativeHandle": {
+    "prefix": "useImperativeHandle\r",
+    "description": "暴露函数\r",
+    "body": ["useImperativeHandle(ref, () => ({\r", "  ${0}\r", "}));"]
   },
   "className": {
     "prefix": "className",
