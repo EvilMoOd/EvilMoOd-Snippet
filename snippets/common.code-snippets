@@ -3,7 +3,7 @@
   "console log": {
     "prefix": "cl",
     "body": [
-      "console.log(${1},'🚀DEBUG变量>>>${1}<<<在$TM_FILENAME_BASE的第$TM_LINE_NUMBER行🚀')"
+      "console.log(${1}, '🚀DEBUG变量>>>${1}<<<在$TM_FILENAME_BASE的第$TM_LINE_NUMBER行🚀')"
     ],
     "description": "DEBUG"
   },
@@ -50,11 +50,6 @@
     "body": ["${1}.map((${2:item}) => ${0})"],
     "description": "map"
   },
-  "forEach": {
-    "prefix": "forEach",
-    "body": ["${1}.forEach((${2:item},${3:index}) => ${0})"],
-    "description": "forEach"
-  },
   "reduce": {
     "prefix": "reduce",
     "body": [
@@ -71,13 +66,18 @@
   },
   "find": {
     "prefix": "find",
-    "body": ["${1}.find($({2:item}) => ${0});"],
+    "body": ["${1}.find((${2:item}) => ${0});"],
     "description": "find"
   },
   "findIndex": {
     "prefix": "findIndex",
     "body": ["${1}.findIndex((${2:item}) => ${0});"],
     "description": "findIndex"
+  },
+  "sort": {
+    "prefix": "sort",
+    "body": ["${1}.sort((${2:item}) => ${0});"],
+    "description": "sort"
   },
   //Promise
   "then": {

@@ -2,7 +2,7 @@
     "name": "evilmood-snippet",
     "displayName": "EvilMoOd Snippet",
     "description": "木的前端代码片段,根据多个snippet提炼出适合本人自用的代码片段,提高生产力,后续会不断更新",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "EvilMoOd",
     "icon": "images/EvilMoOd.png",
     "galleryBanner": {
@@ -52,6 +52,10 @@
                 "path": "./snippets/typescript.code-snippets"
             },
             {
+                "language": "typescriptreact",
+                "path": "./snippets/typescript.code-snippets"
+            },
+            {
                 "language": "javascriptreact",
                 "path": "./snippets/react.code-snippets"
             },
@@ -73,6 +77,10 @@
             },
             {
                 "language": "html",
+                "path": "./snippets/vuetemplate.code-snippets"
+            },
+            {
+                "language": "vue-html",
                 "path": "./snippets/vuetemplate.code-snippets"
             },
             {

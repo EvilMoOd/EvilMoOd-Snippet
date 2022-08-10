@@ -81,7 +81,7 @@
       "useEffect(() => {",
       "  ${1:first}",
       "",
-      " ${2:return () => {",
+      "  ${2:return () => {",
       "    ${3:second}",
       "  \\}}",
       "}, [${4:third}])",
@@ -106,7 +106,7 @@
       "useInsertionEffect(() => {",
       "  ${1:first}",
       "",
-      " ${2:return () => {",
+      "  ${2:return () => {",
       "    ${3:second}",
       "  \\}}",
       "}, [${4:third}])",
@@ -124,10 +124,10 @@
   },
   "className": {
     "prefix": "className",
-    "body": ["className={styles}"]
+    "body": ["className={styles${0}}"]
   },
   "Click": {
     "prefix": "onClick",
-    "body": ["onClick={() => {${1}}}"]
+    "body": ["onClick={() => {${0}}}"]
   }
 }

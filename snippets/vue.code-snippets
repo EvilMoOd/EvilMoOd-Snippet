@@ -34,7 +34,16 @@
     "body": ["watchEffect(() => {", "\t${1}", "})"],
     "description": "Vue Composition api - watchEffect"
   },
-  
+  "Vue Composition API - defineProps": {
+    "prefix": "defineProps",
+    "description": "Vue Composition API - defineProps",
+    "body": [
+      "${1:const props = }defineProps<{",
+      "    ${2:key}: ${3:value};",
+      "  }>();"
+    ]
+  },
+  // Lifecycle
   "Vue Lifecycle Hooks - onMounted": {
     "prefix": "onmounted",
     "body": ["onMounted(() => {${1}})"],

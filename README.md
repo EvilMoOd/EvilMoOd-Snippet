@@ -29,6 +29,7 @@ vue借鉴Vue Vscode Snippet，react借鉴react Snippet。
 |`filter`      | filter function             |
 |`find`        | find function               |
 |`findIndex`   | findIndex function          |
+|`sort`        | sort function               |
 
 ### Promise
 
@@ -86,6 +87,7 @@ vue借鉴Vue Vscode Snippet，react借鉴react Snippet。
 | `watch`           | Vue Composition API - watcher single source           |
 | `watch-array`     | Vue Composition API - watch as array                  |
 | `watcheffect`     | Vue Composition API - watchEffect                     |
+| `defineProps`     | Vue Composition API - defineProps                     |
 | `onmounted`       | Lifecycle hook - onMounted                            |
 | `onbeforemount`   | Lifecycle hook - onBeforeMount                        |
 | `onbeforeupdate`  | Lifecycle hook - onBeforeUpdate                       |
@@ -151,12 +153,18 @@ vue借鉴Vue Vscode Snippet，react借鉴react Snippet。
 | Snippet               | Purpose                             |
 | --------------------- | ----------------------------------- |
 | `useState`            | useState Hook                       |
+| `useTransition`       | useTransition Hook                  |
+| `useDeferredValue`    | useDeferredValue Hook               |
 | `useContext`          | useContext Hook                     |
-| `useEffect`           | useEffect Hook                      |
-| `useLayoutEffect`     | useLayoutEffect Hook                |
+| `useReducer`          | useReducer Hook                     |
+| `useSyncExternalStore`| useSyncExternalStore Hook           |
 | `useMemo`             | useMemo Hook                        |
 | `useCallback`         | useCallback Hook                    |
+| `useEffect`           | useEffect Hook                      |
+| `useLayoutEffect`     | useLayoutEffect Hook                |
+| `useInsertionEffect`  | useInsertionEffect Hook             |
 | `useRef`              | useRef Hook                         |
+| `useImperativeHandle` | useImperativeHandle Hook            |
 
 ### Template
 
