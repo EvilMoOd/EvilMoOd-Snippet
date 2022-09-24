@@ -25,7 +25,7 @@
   //判断
   "else if": {
     "prefix": "ei",
-    "body": ["else if{", "${0}", "}"],
+    "body": ["else if(${1}){", "${0}", "}"],
     "description": "else if"
   },
   "else": {
