@@ -7,25 +7,15 @@
     ],
     "description": "DEBUG"
   },
-  "const": {
-    "prefix": "c",
-    "description": "const",
-    "body": ["const ${1} = ${0}"]
-  },
   "const arrow function": {
     "prefix": "cf",
     "description": "箭头函数表达式",
     "body": ["const ${1} = (${2})=> {${0}}"]
   },
-  "let": {
-    "prefix": "l",
-    "description": "let",
-    "body": ["let ${1} = ${0}"]
-  },
   //判断
   "else if": {
     "prefix": "ei",
-    "body": ["else if(${1}){", "${0}", "}"],
+    "body": ["else if (${1}){", "  ${0}", "}"],
     "description": "else if"
   },
   "else": {
@@ -41,7 +31,7 @@
   },
   "arrow return": {
     "prefix": "ar",
-    "body": ["(${1})=>{", "${0}", "}"],
+    "body": ["(${1})=>{", "  ${0}", "}"],
     "description": "arrow return"
   },
   //数组方法
@@ -54,7 +44,7 @@
     "prefix": "reduce",
     "body": [
       "${1}.reduce((${2:previous}, ${3:current}) => {",
-      "${0}",
+      "  ${0}",
       "}, ${4:initial});"
     ],
     "description": "reduce"
@@ -76,7 +66,7 @@
   },
   "sort": {
     "prefix": "sort",
-    "body": ["${1}.sort((${2:item}) => ${0});"],
+    "body": ["${1}.sort((a,b) => ${0});"],
     "description": "sort"
   },
   //Promise

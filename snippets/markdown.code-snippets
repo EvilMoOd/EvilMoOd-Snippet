@@ -4,16 +4,71 @@
     "description": "博客开头",
     "body": [
       "---",
-      "title: ${1}",
+      "title: ${TM_FILENAME_BASE}",
       "date: $CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE",
       "categories:",
-      " - [${2}]",
+      " - [${1}]",
       "tags:",
-      " - ${3}",
-      "sticky: ${4|是否置顶,true,false|}",
-      "description: \"${5:概述}\"",
+      " - ${2}",
+      "sticky: ${3|是否置顶,true,false|}",
+      "description: \"${4:概述}\"",
       "---",
       ""
     ]
+  },
+  "collapse-blue": {
+    "prefix": "collapse-blue",
+    "description": "蓝色抽屉",
+    "body": ["+++info ${1}", "${0}", "+++"]
+  },
+  "collapse-red": {
+    "prefix": "collapse-red",
+    "description": "红色抽屉",
+    "body": ["+++danger ${1}", "${0}", "+++"]
+  },
+  "collapse": {
+    "prefix": "collapse",
+    "description": "默认抽屉",
+    "body": ["+++ ${1}", "${0}", "+++"]
+  },
+  "collapse-purple": {
+    "prefix": "collapse-purple",
+    "description": "紫色抽屉",
+    "body": ["+++primary ${1}", "${0}", "+++"]
+  },
+  "collapse-green": {
+    "prefix": "collapse-green",
+    "description": "绿色抽屉",
+    "body": ["+++success ${1}", "${0}", "+++"]
+  },
+  "collapse-yellow": {
+    "prefix": "collapse-yellow",
+    "description": "黄色抽屉",
+    "body": ["+++warning ${1}", "${0}", "+++"]
+  },
+  "note-grey": {
+    "prefix": "note-grey",
+    "description": "灰色提醒块",
+    "body": [":::default no-icon ${1}", "${0}", ":::"]
+  },
+  "note-purple": {
+    "prefix": "note-purple",
+    "description": "紫色提醒块",
+    "body": [":::primary no-icon ${1}", "${0}", ":::"]
+  },
+  "note-blue": {
+    "prefix": "note-blue",
+    "description": "蓝色提醒块",
+    "body": [":::info no-icon ${1}", "${0}", ":::"]
+  },
+  "note-yellow": {
+    "prefix": "note-yellow",
+    "description": "黄色提醒块",
+    "body": [":::warning no-icon ${1}", "${0}", ":::"]
+  },
+  "note-red": {
+    "prefix": "note-red",
+    "description": "红色提醒块",
+    "body": [":::danger no-icon ${1}", "${0}", ":::"]
   }
 }
