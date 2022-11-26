@@ -7,11 +7,6 @@
     ],
     "description": "DEBUG"
   },
-  "const arrow function": {
-    "prefix": "cf",
-    "description": "箭头函数表达式",
-    "body": ["const ${1} = (${2})=> {${0}}"]
-  },
   //判断
   "else if": {
     "prefix": "ei",

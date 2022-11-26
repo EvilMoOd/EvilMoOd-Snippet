@@ -11,9 +11,6 @@ vue借鉴Vue Vscode Snippet，react借鉴react Snippet。
 | Snippet      | Purpose            |
 | -----------  | -------------------|
 |`cl`          | console.log        |
-|`c`           | const              |
-|`cf`          | const name = ()=>{}|
-|`l`           | let                |
 |`ei`          | else if            |
 |`el`          | else               |
 |`a`           | ()=>               |
