@@ -15,10 +15,10 @@
     ],
     "description": "vfor statement"
   },
-  "Vue v-model Directive": {
+  "Vue v-input Directive": {
     "prefix": "v-input",
     "body": ["<input v-model=\"${1:data}\" type=\"text\" />"],
-    "description": "v-model directive"
+    "description": "v-input directive"
   },
   "Vue Component with Props Binding": {
     "prefix": "v-component",

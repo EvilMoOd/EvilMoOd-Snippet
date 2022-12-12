@@ -116,25 +116,22 @@ vue借鉴Vue Vscode Snippet，react借鉴react Snippet。
 
 ### Template
 
-| Snippet           | Purpose                             |
-| ----------------- | ----------------------------------- |
-| `vfor`            | v-for directive                     |
-| `vmodel`          | Semantic v-model directive          |
-| `vmodel-num`      | Semantic v-model number directive   |
-| `von`             | v-on click handler with arguments   |
-| `vslot-named`     | Named slot                          |
-| `vel-props`       | Component element with props        |
-| `vsrc`            | Image src binding                   |
-| `vstyle`          | Inline style binding                |
-| `vstyle-obj`      | Inline style binding with objects   |
-| `vclass`          | Class binding                       |
-| `vclass-obj`      | Class binding with objects          |
-| `vclass-obj-mult` | Multiple conditional class bindings |
-| `vanim`           | Transition component with JS hooks  |
-| `vnuxtl`          | Nuxt Routing Link                   |
-| `vroutename`      | router-link Named Routing           |
-| `vroutenameparam` | router-link Named with Parameters   |
-| `vroutepath`      | router-link Path Routing Link       |
+| Snippet                | Purpose                             |
+| -----------------      | ----------------------------------- |
+| `v-for`                | v-for directive                     |
+| `v-for-element`        | v-for directive                     |
+| `v-input`              | Input with modelValue               |
+| `v-component`          | Named component                     |
+| `v-slot`               | Named slot                          |
+| `v-img`                | Image src binding                   |
+| `v-style`              | Inline style binding                |
+| `v-class`              | Class binding                       |
+| `v-transition`         | Transition component with JS hooks  |
+| `v-transition-group`   | Transition component with JS hooks  |
+| `v-router-view`        | router-view Named Routing           |
+| `v-router-link`        | router-link Named Routing           |
+| `v-router-link-params` | router-link Named with Parameters   |
+| `v-router-path`        | router-link Path Routing Link       |
 
 ## React
 
