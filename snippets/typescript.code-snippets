@@ -7,11 +7,11 @@
   "interface": {
     "prefix": "interface",
     "description": "interface",
-    "body": ["interface ${1:name} {", "${2} ", "}"]
+    "body": ["interface ${1:name} {", "  ${2}", "}"]
   },
   // other
   "setinterval": {
     "prefix": "setinterval",
-    "body": ["setInterval(() => {", "${0}", "}, ${1:interval});"]
+    "body": ["setInterval(() => {", "  ${0}", "}, ${1:interval});"]
   },
 }

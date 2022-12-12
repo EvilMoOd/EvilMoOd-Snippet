@@ -34,7 +34,7 @@
   "useTransition": {
     "prefix": "useTransition",
     "description": "isPending 为处理状态标识，若处理中则为 true，处理完毕则为 false. startTransition 接受一个回调函数，该回调函数中所有工作 (同步或异步) 处理完毕之后才会将 isPending 置 false",
-    "body": ["const [isPending, startTransition] = useTransition();", ""]
+    "body": ["const [${1:isPending}, ${2:startTransition}] = useTransition();", ""]
   },
   "useDeferredValue": {
     "prefix": "useDeferredValue",

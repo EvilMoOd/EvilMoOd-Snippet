@@ -1,13 +1,13 @@
 {
   "v-for": {
-    "prefix": "vf",
+    "prefix": "v-for",
     "body": [
       "v-for=\"(${2:item}, ${3:index}) in ${1:items}\" :key=\"${4:index}\""
     ],
     "description": "Expects: Array | Object | number | string"
   },
   "Vue v-for": {
-    "prefix": "vfor",
+    "prefix": "v-for-element",
     "body": [
       "<${1:div} v-for=\"${2:item} in ${2:item}s\" :key=\"${2:item}.id\">",
       "\t{{ ${2:item} }}",
@@ -16,47 +16,42 @@
     "description": "vfor statement"
   },
   "Vue v-model Directive": {
-    "prefix": "vmodel",
+    "prefix": "v-input",
     "body": ["<input v-model=\"${1:data}\" type=\"text\" />"],
     "description": "v-model directive"
   },
-  "Vue v-on Shortcut Directive": {
-    "prefix": "von",
-    "body": ["@click=\"${0})\""],
-    "description": "v-on click handler with arguments"
-  },
   "Vue Component with Props Binding": {
-    "prefix": "vcomponent",
+    "prefix": "v-component",
     "body": ["<${1:component} :${1:propName}=\"${0}\"></${1:component}>"],
     "description": "component element with props"
   },
   "Vue Named Slot": {
-    "prefix": "vslot",
+    "prefix": "v-slot",
     "body": ["<template v-slot:${0:name}>${1:defaultcontent}</template>"],
     "description": "named slot"
   },
   "Vue Image Source Binding": {
-    "prefix": "vimg",
+    "prefix": "v-img",
     "body": ["<img :src=\"${1:fileName}\" alt=\"${2:altText}\"/>"],
     "description": "image source binding"
   },
   "Vue Style Binding": {
-    "prefix": "vstyle",
+    "prefix": "v-style",
     "body": ["<${1:div} :style=\"{ fontSize: ${2:data} + 'px' }\"></${1:div}>"],
     "description": "vue inline style binding"
   },
   "Vue Class Binding": {
-    "prefix": "vclass",
+    "prefix": "v-class",
     "body": ["<${1:div} :class=\"{ ${2:className}: ${3:data} }\"></${1:div}>"],
     "description": "vue class binding"
   },
   "Vue keep alive": {
-    "prefix": "vka",
+    "prefix": "v-keepalive",
     "body": ["<keep-alive$1>", "\t$2", "</keep-alive>$0"],
     "description": "keep-alive element"
   },
   "Vue Transition Component with JavaScript Hooks": {
-    "prefix": "vt",
+    "prefix": "v-transition",
     "body": [
       "<transition",
       "\tmode=\"out-in\"",
@@ -72,33 +67,33 @@
     "description": "transition component js hooks"
   },
   "transition-group": {
-    "prefix": "vtg",
+    "prefix": "v-transition-group",
     "body": ["<transition-group$1>", "\t$2", "</transition-group>"],
     "description": "transition-group element"
   },
   "routerView": {
-    "prefix": "vrv",
+    "prefix": "v-router-view",
     "body": [
       "<router-view>$1</router-view>$0"
     ],
     "description": "router-view element"
   },
   "Vue Named Routing Link": {
-    "prefix": "vroutename",
+    "prefix": "v-router-link",
     "body": [
       "<router-link :to=\"{name: '${1:name}'}\">${2:LinkTitle}</router-link>"
     ],
     "description": "Named routing link"
   },
   "Vue Named Routing Link with Params": {
-    "prefix": "vroutenameparam",
+    "prefix": "v-router-link-params",
     "body": [
       "<router-link :to=\"{name: '${1:name}', params:{${2:id}: '${3:value}'} }\">${4:LinkTitle}</router-link>"
     ],
     "description": "Named routing link w/ params"
   },
   "Vue Path Routing Link": {
-    "prefix": "vroutepath",
+    "prefix": "v-router-path",
     "body": ["<router-link to=\"${1:path}\">${2:LinkTitle}</router-link>"],
     "description": "Path routing link"
   }

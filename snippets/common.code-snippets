@@ -15,7 +15,7 @@
   },
   "else": {
     "prefix": "el",
-    "body": ["else {", "${0}", "}"],
+    "body": ["else {", "  ${0}", "}"],
     "description": "else"
   },
   //函数
@@ -82,7 +82,7 @@
     "description": "require"
   },
   "exports": {
-    "prefix": "exs",
+    "prefix": "ex",
     "body": ["exports.${1} = ${2};$0"],
     "description": "exports"
   },
@@ -101,11 +101,6 @@
     "prefix": "im",
     "description": "导入模块",
     "body": ["import '${0:moduleName}' "]
-  },
-  "ex": {
-    "prefix": "ex",
-    "description": "",
-    "body": ["export"]
   },
   "exd": {
     "prefix": "exd",
