@@ -1,0 +1,751 @@
+{
+  // 按钮
+  "Antd default button": {
+    "prefix": "a-button",
+    "description": "Antd default button",
+    "body": [
+      "<a-button type=\"${1|primary,default,ghost,dashed,link,text|}\">$0</a-button>"
+    ]
+  },
+  "Antd icon button": {
+    "prefix": "a-icon-button",
+    "description": "Antd button with icon",
+    "body": [
+      "<a-button  type=\"${1|primary,default,ghost,dashed,link,text|}\">",
+      "  <template #icon>",
+      "    <$2 />",
+      "  </template>",
+      "</a-button>"
+    ]
+  },
+  "Antd divider": {
+    "prefix": "a-divider",
+    "description": "Antd basic divider",
+    "body": [
+      "<a-divider />",
+    ]
+  },
+  "Antd row": {
+    "prefix": "a-row",
+    "description": "Antd basic grid",
+    "body": [
+      "<a-row>",
+      "  <a-col :span=\"$1\">$2</a-col>",
+      "  <a-col :span=\"$3\">$4</a-col>",
+      "</a-row>"
+    ]
+  },
+  "Antd layout common": {
+    "prefix": "a-layout-common",
+    "description": "Antd basic layout common",
+    "body": [
+      "<a-layout>",
+      "  <a-layout-header>$1</a-layout-header>",
+      "  <a-layout-content>$2</a-layout-content>",
+      "  <a-layout-footer>$3</a-layout-footer>",
+      "</a-layout>"
+    ]
+  },
+  "Antd layout side": {
+    "prefix": "a-layout-sider",
+    "description": "Antd basic layout side",
+    "body": [
+      "<a-layout>",
+      "  <a-layout-header>$1</a-layout-header>",
+      "  <a-layout>",
+      "    <a-layout-sider>$2</a-layout-sider>",
+      "    <a-layout-content>$3</a-layout-content>",
+      "  </a-layout>",
+      "  <a-layout-footer>$4</a-layout-footer>",
+      "</a-layout>"
+    ]
+  },
+  "Antd layout side2": {
+    "prefix": "a-layout-sider2",
+    "description": "Antd basic layout side2",
+    "body": [
+      "<a-layout>",
+      "  <a-layout-sider>$1</a-layout-sider>",
+      "  <a-layout>",
+      "    <a-layout-header>$2</a-layout-header>",
+      "    <a-layout-content>$3</a-layout-content>",
+      "    <a-layout-footer>$4</a-layout-footer>",
+      "  </a-layout>",
+      "</a-layout>"
+    ]
+  },
+  "Antd space": {
+    "prefix": "a-space",
+    "description": "Antd basic space",
+    "body": [
+      "<a-space direction=\"$1\" size=\"$2\">",
+      "  $0",
+      "</a-space>"
+    ]
+  },
+  // 导航
+  "Antd affix": {
+    "prefix": "a-affix",
+    "description": "Antd affix",
+    "body": [
+      "<a-affix>",
+      "  $0",
+      "</a-affix>"
+    ]
+  },
+  "Antd breadcrumb": {
+    "prefix": "a-breadcrumb",
+    "description": "Antd breadcrumb",
+    "body": [
+      "<a-breadcrumb>",
+      "  <a-breadcrumb-item>$1</a-breadcrumb-item>",
+      "  <a-breadcrumb-item>$2</a-breadcrumb-item>",
+      "</a-breadcrumb>"
+    ]
+  },
+  "Antd dropdown": {
+    "prefix": "a-dropdown",
+    "description": "Antd dropdown",
+    "body": [
+      "<a-dropdown>",
+      "  $0",
+      "</a-menu>"
+    ]
+  },
+  "Antd menu": {
+    "prefix": "a-menu",
+    "description": "Antd menu",
+    "body": [
+      "<a-menu>",
+      "  <a-menu-item>$1</a-menu-item>",
+      "  <a-menu-item>$2</a-menu-item>",
+      "</a-menu>"
+    ]
+  },
+  "Antd page header": {
+    "prefix": "a-page-header",
+    "description": "Antd page header",
+    "body": [
+      "<a-page-header />",
+    ]
+  },
+  "Antd pagination": {
+    "prefix": "a-page-pagination",
+    "description": "Antd page pagination",
+    "body": [
+      "<a-pagination v-model:current=\"$1\" :total=\"$2\" />",
+    ]
+  },
+  "Antd steps": {
+    "prefix": "a-steps",
+    "description": "Antd steps",
+    "body": [
+      "<a-steps :current=\"$1\">",
+      "  <a-step title=\"$2\" description=\"$3\" />",
+      "  <a-step title=\"$4\" description=\"$5\" />",
+      "  <a-step title=\"$6\" description=\"$7\" />",
+      "</a-steps>"
+    ]
+  },
+  // 数据录入
+  "Antd AutoComplete": {
+    "prefix": "a-auto-complete",
+    "description": "Antd auto-complete",
+    "body": [
+      "<a-auto-complete v-model:value=\"$1\" :options=\"$2\"/>",
+    ]
+  },
+  "Antd cascader": {
+    "prefix": "a-cascader",
+    "description": "Antd cascader",
+    "body": [
+      "<a-cascader v-model:value=\"$1\" :options=\"$2\">",
+    ]
+  },
+  "Antd checkbox": {
+    "prefix": "a-checkbox",
+    "description": "Antd checkbox",
+    "body": [
+      "<a-checkbox v-model:checked=\"$1\">$0</a-checkbox>"
+    ]
+  },
+  "Antd checkbox group": {
+    "prefix": "a-checkbox-group",
+    "description": "Antd checkbox group",
+    "body": [
+      "<a-checkbox-group v-model:value=\"$1\" :options=\"$2\" />",
+    ]
+  },
+  "Antd checkbox group item": {
+    "prefix": "a-checkbox-group-item",
+    "description": "Antd checkbox group",
+    "body": [
+      "<a-checkbox-group ",
+      "  :change=\"$1\"",
+      "  :value=\"$2\"",
+      ">",
+      "  <a-checkbox value=\"$3\">$4</a-checkbox>",
+      "  <a-checkbox value=\"$5\">$6</a-checkbox>",
+      "</a-checkbox-group>"
+    ]
+  },
+  "Antd date picker": {
+    "prefix": "a-date-picker",
+    "description": "Antd date picker",
+    "body": [
+      "<a-date-picker v-model:value=\"$1\"  picker=\"${2|data,week,month,quarter,year|}\" />",
+    ]
+  },
+  "Antd form": {
+    "prefix": "a-form",
+    "description": "Antd form",
+    "body": [
+      "<a-form layout=\"${1|inline,vertical,horizontal|}\" onSubmit=\"$2\">",
+      "  <a-form-item>",
+      "    $3",
+      "  </a-form-item>",
+      "  <a-form-item>",
+      "    <a-button",
+      "      type=\"primary\"",
+      "      htmlType=\"submit\"",
+      "    >",
+      "      $4",
+      "    </a-button>",
+      "  </a-form-item>",
+      "</a-form>"
+    ]
+  },
+  "Antd input": {
+    "prefix": "a-input",
+    "description": "Antd input",
+    "body": [
+      "<a-input  v-model:value=\"$1\" placeholder=\"$2\" />"
+    ]
+  },
+  "Antd pre tab input": {
+    "prefix": "a-input-pre",
+    "description": "Antd pre tab input",
+    "body": [
+      "<a-input addonBefore=\"$1\" placeholder=\"$2\" />"
+    ]
+  },
+  "Antd post tab input": {
+    "prefix": "a-input-post",
+    "description": "Antd Antd post tab input",
+    "body": [
+      "<a-input addonAfter=\"$1\" placeholder=\"$2\" />"
+    ]
+  },
+  "Antd input search": {
+    "prefix": "a-input-search",
+    "description": "Antd input search",
+    "body": [
+      "<a-input-search",
+      "  placeholder=\"$1\"",
+      "  onSearch=\"$2\"",
+      "  enterButton",
+      "/>"
+    ]
+  },
+  "Antd input textarea": {
+    "prefix": "a-input-textarea",
+    "description": "Antd input textarea",
+    "body": [
+      "<a-textarea rows=\"$1\" />"
+    ]
+  },
+  "Antd input number": {
+    "prefix": "a-input-number",
+    "description": "Antd inputnumber",
+    "body": [
+      "<a-input-number v-model:value=\"$2\" :min=\"$3\" :max=\"$4\" />"
+    ]
+  },
+  "Antd mention": {
+    "prefix": "a-mentions",
+    "description": "Antd mentions",
+    "body": [
+      "<a-mentions v-model:value=\"$1\" autofocus @select=\"$2\">",
+      "  <a-mentions-option value=\"$3\">$4</a-mentions-option>",
+      "  <a-mentions-option value=\"$5\">$6</a-mentions-option>",
+      "  <a-mentions-option value=\"$7\">$8</a-mentions-option>",
+      "</a-mentions>"
+    ]
+  },
+  "Antd radio": {
+    "prefix": "a-radio",
+    "description": "Antd radio",
+    "body": [
+      "<a-radio>$1</a-radio>"
+    ]
+  },
+  "Antd disabled radio": {
+    "prefix": "a-radio-disabled",
+    "description": "Antd Antd disabled radio",
+    "body": [
+      "<a-radio disabled >$1</a-radio>"
+    ]
+  },
+  "Antd radio group": {
+    "prefix": "a-radio-group",
+    "description": "Antd radio group ",
+    "body": [
+      "<a-radio-group name=\"$1\" defaultValue={$2}>",
+      "  <a-radio value=\"$3\">$4</a-radio>",
+      "  <a-radio value=\"$5\">$6</a-radio>",
+      "</a-radio-group>"
+    ]
+  },
+  "Antd radio button group": {
+    "prefix": "a-radio-button-group",
+    "description": "Antd radio button group",
+    "body": [
+      "<a-radio-group onChange=\"$1\" value=\"$2\">",
+      "  <a-radio-button value=\"$3\">$4</a-radio-button>",
+      "  <a-radio-button value=\"$5\">$6</a-radio-button>",
+      "</a-radio-group>"
+    ]
+  },
+  "Antd rate group": {
+    "prefix": "a-rate",
+    "description": "Antd rate",
+    "body": [
+      "<a-rate v-model:value=\"$1\" />",
+    ]
+  },
+  "Antd select": {
+    "prefix": "a-select",
+    "description": "Antd select",
+    "body": [
+      "<a-select :value=\"$1\" :onChange=\"$2\">",
+      "  <a-select-option value=\"$3\">$4</a-option>",
+      "  <a-select-option value=\"$5\">$6</a-option>",
+      "</a-select>"
+    ]
+  },
+  "Antd slider": {
+    "prefix": "a-slider",
+    "description": "Antd slider",
+    "body": [
+      "<a-slider v-model:value=\"$1\" :min=\"$2\" :max=\"$3\" />",
+    ]
+  },
+  "Antd switch": {
+    "prefix": "a-switch",
+    "description": "Antd switch",
+    "body": [
+      "<a-switch v-model:checked=\"$1\" />",
+    ]
+  },
+  "Antd time picker": {
+    "prefix": "a-time-picker",
+    "description": "Antd time picker",
+    "body": [
+      "<a-time-picker v-model:value=\"value\" />",
+    ]
+  },
+  "Antd transfer": {
+    "prefix": "a-transfer",
+    "description": "Antd transfer",
+    "body": [
+      "<a-transfer",
+      "  v-model:target-keys=\"$1\"",
+      "  v-model:selected-keys=\"$2\"",
+      "  :data-source=\"$3\"",
+      "  :titles=\"['$4', '$5']\"",
+      "/>"
+    ]
+  },
+  "Antd treeSelect": {
+    "prefix": "a-treeSelect",
+    "description": "Antd treeSelect",
+    "body": [
+      "<a-tree-select",
+      "    v-model:value=\"$1\"",
+      "    :tree-data=\"$2\"",
+      "    placeholder=\"$3\"",
+      "    show-search",
+      "    multiple",
+      "    tree-default-expand-all",
+      "  >",
+      "  <template #title=\"$4\">",
+      "    <b v-if=\"val === 'parent 1-1'\" style=\"color: #08c\">{{ val }}</b>",
+      "    <template v-else>{{ title }}</template>",
+      "  </template>",
+      "</a-tree-select>"
+    ]
+  },
+  "Antd upload": {
+    "prefix": "a-upload",
+    "description": "Antd upload",
+    "body": [
+      "<a-upload",
+      "    v-model:file-list=\"$1\"",
+      "    action=\"${2:https://}\"",
+      "    @change=\"$3\"",
+      "  >",
+      "  <a-button>",
+      "    <upload-outlined></upload-outlined>",
+      "    ${4:Click to Upload}",
+      "  </a-button>",
+      "</a-upload>"
+    ]
+  },
+  // 数据展示
+  "Antd avatar": {
+    "prefix": "a-avatar",
+    "description": "Antd avatar",
+    "body": [
+      "<a-avatar :size=\"$1\" shape=\"${2|circle,square|}>\"",
+    ]
+  },
+  "Antd badge": {
+    "prefix": "a-badge",
+    "description": "Antd badge",
+    "body": [
+      "<a-badge :count=\"$1\">",
+      "  $1",
+      "</a-badge>"
+    ]
+  },
+  "Antd badge icon": {
+    "prefix": "a-badge-icon",
+    "description": "Antd badge icon",
+    "body": [
+      "<a-badge>",
+      "  <template #count>",
+      "    $1",
+      "  </template>",
+      "  $2",
+      "</a-badge>"
+    ]
+  },
+  "Antd calendar": {
+    "prefix": "a-calendar",
+    "description": "Antd calendar",
+    "body": [
+      "<a-calendar v-model:value=\"$1\" @panelChange=\"$2\" />",
+    ]
+  },
+  "Antd card": {
+    "prefix": "a-card",
+    "description": "Antd card",
+    "body": [
+      "<a-card>",
+      "  <template #${1|extra,cover|}>{$2:subTitle}</template>",
+      "    $3",
+      "</a-card>"
+    ]
+  },
+  "Antd carousel": {
+    "prefix": "a-carousel",
+    "description": "Antd carousel",
+    "body": [
+      "<a-carousel>",
+      "  $1",
+      "</a-carousel>"
+    ]
+  },
+  "Antd collapse": {
+    "prefix": "a-collapse",
+    "description": "Antd collapse",
+    "body": [
+      "<a-collapse v-model:activeKey=\"$1\">",
+      "  <a-collapse-panel header=\"$2\" key=\"$3\">",
+      "  </a-collapse-panel>",
+      "</a-collapse>"
+    ]
+  },
+  "Antd comment": {
+    "prefix": "a-comment",
+    "description": "Antd comment",
+    "body": [
+      "<a-comment>",
+      "  <template #actions>",
+      "    <span key=\"comment-basic-like\">",
+      "      <a-tooltip title=\"Like\">",
+      "        <template v-if=\"action === 'liked'\">",
+      "          <LikeFilled @click=\"like\" />",
+      "        </template>",
+      "        <template v-else>",
+      "          <LikeOutlined @click=\"like\" />",
+      "        </template>",
+      "      </a-tooltip>",
+      "      <span style=\"padding-left: 8px; cursor: auto\">",
+      "        {{ likes }}",
+      "      </span>",
+      "    </span>",
+      "    <span key=\"comment-basic-dislike\">",
+      "      <a-tooltip title=\"Dislike\">",
+      "        <template v-if=\"action === 'disliked'\">",
+      "          <DislikeFilled @click=\"dislike\" />",
+      "        </template>",
+      "        <template v-else>",
+      "          <DislikeOutlined @click=\"dislike\" />",
+      "        </template>",
+      "      </a-tooltip>",
+      "      <span style=\"padding-left: 8px; cursor: auto\">",
+      "        {{ dislikes }}",
+      "      </span>",
+      "    </span>",
+      "    <span key=\"comment-basic-reply-to\">Reply to</span>",
+      "  </template>",
+      "  <template #author><a>Han Solo</a></template>",
+      "  <template #avatar>",
+      "    <a-avatar src=\"https://joeschmoe.io/api/v1/random\" alt=\"Han Solo\" />",
+      "  </template>",
+      "  <template #content>",
+      "    <p>",
+      "      We supply a series of design principles, practical patterns and high quality design",
+      "      resources (Sketch and Axure), to help people create their product prototypes beautifully and",
+      "      efficiently.",
+      "    </p>",
+      "  </template>",
+      "  <template #datetime>",
+      "    <a-tooltip :title=\"dayjs().format('YYYY-MM-DD HH:mm:ss')\">",
+      "      <span>{{ dayjs().fromNow() }}</span>",
+      "    </a-tooltip>",
+      "  </template>",
+      "</a-comment>"
+    ]
+  },
+  "Antd descriptions": {
+    "prefix": "a-descriptions",
+    "description": "Antd description",
+    "body": [
+      "<a-descriptions title=\"$1\">",
+      "  <a-descriptions-item label=\"$2\">$3</a-descriptions-item>",
+      "</a-descriptions>"
+    ]
+  },
+  "Antd empty": {
+    "prefix": "a-empty",
+    "description": "Antd empty",
+    "body": [
+      "<a-empty />",
+    ]
+  },
+  "Antd Image": {
+    "prefix": "a-image",
+    "description": "Antd image",
+    "body": [
+      "<a-image :width=\"$1\" src=\"$2\" />",
+    ]
+  },
+  "Antd list": {
+    "prefix": "a-list",
+    "description": "Antd list",
+    "body": [
+      "<a-list item-layout=\"${1|horizontal,vertical|}\" :data-source=\"$2\">",
+      "  <template #renderItem=\"{ $2 }\">",
+      "    <a-list-item>",
+      "      <a-list-item-meta",
+      "        description=\"$3\"",
+      "      >",
+      "        <template #title>",
+      "          $4",
+      "        </template>",
+      "        <template #avatar>",
+      "          <a-avatar src=\"$5\" />",
+      "        </template>",
+      "      </a-list-item-meta>",
+      "    </a-list-item>",
+      "  </template>",
+      "</a-list>"
+    ]
+  },
+  "Antd popover": {
+    "prefix": "a-popover",
+    "description": "Antd popover",
+    "body": [
+      "<a-popover title=\"$1\">",
+      "  <template #content>",
+      "    <p>$2</p>",
+      "  </template>",
+      "  ${3:<a-button type=\"primary\">Hover me</a-button>}",
+      "</a-popover>"
+    ]
+  },
+  "Antd statistic": {
+    "prefix": "a-statistic",
+    "description": "Antd statistic",
+    "body": [
+      "<a-statistic title=\"$1\" :value=\"$2\" :precision=\"$3\"/>",
+    ]
+  },
+  "Antd table": {
+    "prefix": "a-table",
+    "description": "Antd table",
+    "body": [
+      "<a-table :dataSource=\"${1:dataSource}\" :columns=\"${2:columns}\" />",
+    ]
+  },
+  "Antd tabs": {
+    "prefix": "a-tabs",
+    "description": "Antd tabs",
+    "body": [
+      "<a-tabs v-model:activeKey=\"$1\">",
+      "  <a-tab-pane tab=\"$2\" key=\"$3\">$4</a-tab-pane>",
+      "</a-tabs>"
+    ]
+  },
+  "Antd tag": {
+    "prefix": "a-tag",
+    "description": "Antd tag",
+    "body": [
+      "<a-tag>$1</a-tag>",
+    ]
+  },
+  "Antd timeline": {
+    "prefix": "a-timeline",
+    "description": "Antd timeline",
+    "body": [
+      "<a-timeline>",
+      "  <a-timeline-item>$1</a-timeline-item>",
+      "  <a-timeline-item>$2</a-timeline-item>",
+      "</a-timeline>"
+    ]
+  },
+  "Antd tooltip": {
+    "prefix": "a-tooltip",
+    "description": "Antd tooltip",
+    "body": [
+      "<a-tooltip placement=\"$1\" header=\"$2\">",
+      "  <template #title>$3</template>",
+      "  $4",
+      "</a-tooltip>"
+    ]
+  },
+  "Antd tree": {
+    "prefix": "a-tree",
+    "description": "Antd tree",
+    "body": [
+      "<a-tree",
+      "  v-model:expandedKeys=\"$1\"",
+      "  v-model:selectedKeys=\"$2\"",
+      "  v-model:checkedKeys=\"$3\"",
+      "  checkable",
+      "  :tree-data=\"$4\">",
+      "  <template #title=\"{ $5, $6 }\">",
+      "    <span v-if=\"key === '0-0-1-0'\" style=\"color: #1890ff\">{{ title }}</span>",
+      "    <template v-else>{{ title }}</template>",
+      "  </template>",
+      "</a-tree>"
+    ]
+  },
+  // 反馈
+  "Antd alert": {
+    "prefix": "a-alert",
+    "description": "Antd alert",
+    "body": [
+      "<a-alert type=\"${1|success,info,warning,error|}\" message=\"$2\" />",
+    ]
+  },
+  "Antd drawer": {
+    "prefix": "a-drawer",
+    "description": "Antd drawer",
+    "body": [
+      "<a-drawer",
+      "  v-model:visible=\"$1\"",
+      "  title=\"$2\"",
+      "  placement=\"${3|top,bottom,left,right|}\"",
+      "  @after-visible-change=\"$4\">",
+      "  <p>$5</p>",
+      "</a-drawer>"
+    ]
+  },
+  "Antd model": {
+    "prefix": "a-model",
+    "description": "Antd model",
+    "body": [
+      "<a-modal v-model:visible=\"$1\" title=\"$2\" @ok=\"$3\">",
+      "  <p>$4</p>",
+      "</a-modal>"
+    ]
+  },
+  "Antd popconfirm": {
+    "prefix": "a-popconfirm",
+    "description": "Antd popconfirm",
+    "body": [
+      "<a-popconfirm",
+      "  title=\"$1\"",
+      "  ok-text=\"${2:Yes}\"",
+      "  cancel-text=\"${3:No}\"",
+      "  @confirm=\"$4\"",
+      "  @cancel=\"$5\"",
+      ">"
+    ]
+  },
+  "Antd progress": {
+    "prefix": "a-progress",
+    "description": "Antd progress",
+    "body": [
+      "<a-progress :percent=\"$1\" />",
+    ]
+  },
+  "Antd result": {
+    "prefix": "a-result",
+    "description": "Antd result",
+    "body": [
+      "<a-result",
+      "    status=\"success\"",
+      "    title=\"Successfully Purchased Cloud Server ECS!\"",
+      "    sub-title=\"Order number: 2017182818828182881 Cloud server configuration takes 1-5 minutes, please wait.\"",
+      "  >",
+      "  <template #extra>",
+      "    <a-button key=\"console\" type=\"primary\">Go Console</a-button>",
+      "    <a-button key=\"buy\">Buy Again</a-button>",
+      "  </template>",
+      "</a-result>"
+    ]
+  },
+  "Antd skeleton": {
+    "prefix": "a-skeleton",
+    "description": "Antd skeleton",
+    "body": [
+      "<a-skeleton />",
+    ]
+  },
+  "Antd spin": {
+    "prefix": "a-spin",
+    "description": "Antd spin",
+    "body": [
+      "<a-spin />",
+    ]
+  },
+  "Antd spin warp": {
+    "prefix": "a-spin-wrap",
+    "description": "Antd spin",
+    "body": [
+      "<a-spin tip=\"Loading...\">",
+      "  $1",
+      "</a-spin>",
+    ]
+  },
+  // 其他
+  "Antd anchor": {
+    "prefix": "a-anchor",
+    "description": "Antd anchor",
+    "body": [
+      "<a-anchor :affix=\"${1|false,true|}\">",
+      "  <a-anchor-link href=\"#$2\" title=\"$3\" />",
+      "</a-anchor>"
+    ]
+  },
+  "Antd back top": {
+    "prefix": "a-back top",
+    "description": "Antd back top",
+    "body": [
+      "<a-back-top />",
+    ]
+  },
+  "Antd config provider": {
+    "prefix": "a-config-provider",
+    "description": "Antd config provider",
+    "body": [
+      "<a-config-provider :getPopupContainer=\"getPopupContainer\">",
+      "  <app />",
+      "</a-config-provider>"
+    ]
+  },
+}

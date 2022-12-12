@@ -76,8 +76,20 @@
                 "path": "./snippets/vue.code-snippets"
             },
             {
+                "language": "javascript",
+                "path": "./snippets/antdv-ts.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/antdv-ts.code-snippets"
+            },
+            {
                 "language": "html",
                 "path": "./snippets/vuetemplate.code-snippets"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/antdv.code-snippets"
             },
             {
                 "language": "markdown",

@@ -1,0 +1,20 @@
+{
+  "Antd table columns": {
+    "prefix": "a-table-columns",
+    "description": "Antd table columns",
+    "body": [
+      "const columns = [",
+      "  {",
+      "    title: '$1',",
+      "    dataIndex: '$2',",
+      "    key: '$3,",
+      "  },",
+      "  {",
+      "    title: '$4',",
+      "    dataIndex: '$5',",
+      "    key: '$6',",
+      "  },",
+      "]"
+    ]
+  },
+}
