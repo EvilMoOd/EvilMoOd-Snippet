@@ -32,13 +32,13 @@
   //数组方法
   "map": {
     "prefix": "map",
-    "body": ["${1}.map((${2:item}) => ${0})"],
+    "body": ["${1:arr}.map((${2:item}) => ${0})"],
     "description": "map"
   },
   "reduce": {
     "prefix": "reduce",
     "body": [
-      "${1}.reduce((${2:previous}, ${3:current}) => {",
+      "${1:arr}.reduce((${2:previous}, ${3:current}) => {",
       "  ${0}",
       "}, ${4:initial});"
     ],
@@ -46,22 +46,22 @@
   },
   "filter": {
     "prefix": "filter",
-    "body": ["${1}.filter((${2:item}) => ${0});"],
+    "body": ["${1:arr}.filter((${2:item}) => ${0});"],
     "description": "filter"
   },
   "find": {
     "prefix": "find",
-    "body": ["${1}.find((${2:item}) => ${0});"],
+    "body": ["${1:arr}.find((${2:item}) => ${0});"],
     "description": "find"
   },
   "findIndex": {
     "prefix": "findIndex",
-    "body": ["${1}.findIndex((${2:item}) => ${0});"],
+    "body": ["${1:arr}.findIndex((${2:item}) => ${0});"],
     "description": "findIndex"
   },
   "sort": {
     "prefix": "sort",
-    "body": ["${1}.sort((a,b) => ${0});"],
+    "body": ["${1:arr}.sort((a,b) => ${0});"],
     "description": "sort"
   },
   //Promise

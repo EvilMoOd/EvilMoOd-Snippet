@@ -2,17 +2,17 @@
   //Composition API
   "Vue Composition API - Vue ref": {
     "prefix": "ref",
-    "body": ["const ${1:name} = ref(${2:initialValue})"],
+    "body": ["ref(${2:initialValue})"],
     "description": "Vue Ref"
   },
   "Vue Composition API - Reactive": {
     "prefix": "reactive",
-    "body": ["const ${1:name} = reactive({", "\t${2:count}: ${3:0}", "})"],
+    "body": ["reactive({", "\t${2:count}: ${3:0}", "})"],
     "description": "Vue Composition api - reactive"
   },
   "Vue Composition API - Computed": {
     "prefix": "computed",
-    "body": ["const ${1:name} = computed(() => {", "\treturn ${2}", "})"],
+    "body": ["computed(() => {", "\treturn ${2}", "})"],
     "description": "Vue Composition api - computed"
   },
   "Vue Composition API - watch - single source": {
@@ -38,9 +38,25 @@
     "prefix": "defineProps",
     "description": "Vue Composition API - defineProps",
     "body": [
-      "${1:const props = }defineProps<{",
-      "    ${2:key}: ${3:value};",
-      "  }>();"
+      "defineProps<{",
+      "  ${2:key}: ${3:value};",
+      "}>();"
+    ]
+  },
+  "Vue Composition API - defineEmits": {
+    "prefix": "defineEmits",
+    "description": "Vue Composition API - defineEmits",
+    "body": [
+      "defineEmits<{",
+      "  ${2:key}: ${3:value};",
+      "}>();"
+    ]
+  },
+  "Vue Composition API - defineExpose": {
+    "prefix": "defineExpose",
+    "description": "Vue Composition API - defineExpose",
+    "body": [
+      "defineExpose({$0})",
     ]
   },
   // Lifecycle
