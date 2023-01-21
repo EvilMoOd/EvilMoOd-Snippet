@@ -13,3 +13,5 @@
 ## 0.0.7 增加ant-design-vue代码片段，优化部分代码
 
 ## 0.0.8 调整vue snippet，增加两个vue api
+
+## 0.0.9 ant-design-vue代码片段修复与优化
